@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    
+</body>
+<script src="app.js" ></script>
+</html> -->
+
+
+
+
+
+<!-- <html>
+<head>
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+
+  <div id="Page1">
+    <fieldset>
+        <p>The approximate population of our world is:</p>
+            <input type="radio" id="q1-o1" name= "q1"> 5.8 billion
+            <input type="radio" id="q1-o1" name= "q1"> billion
+            <input type="radio" id="q1-o1" name= "q1">7.8 billion
+    </fieldset>
+    <a href="#" onclick="return show('Page2','Page1');">Next</a>
+  </div>
+
+  <div id="Page2" style="display:none">
+    Content of page 2
+    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+  </div>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body onload = "showQuestion(1)" class="page2">
+    <fieldset >
+        <div class="card text-center main" >
+            <div class="card-body inside">
+                <h3 id="timer"></h3>
+                <h5 class="card-title" id="qno">Question No</h5>
+                <h6 class="card-subtitle mb-2" id = "quest">abc</h6>
+                <div class="text-left opts">
+                    <input class="radiobtn" type="radio" name="question" id = "option1" autocomplete="off" ><label class="options text-left " for="option1" onclick="getlabel(this)"></label><br/>
+                    <input class="radiobtn" type="radio" name = "question" id = "option2" autocomplete="off" ><label class="options text-left" for="option2" onclick="getlabel(this)"></label><br/>
+                    <input class="radiobtn" type="radio" name = "question" id = "option3" autocomplete="off" ><label class="options text-left" for="option3" onclick="getlabel(this)"></label><br/>
+                    <input class="radiobtn" type="radio" name = "question" id = "option4" autocomplete="off" ><label class="options text-left" for="option4" onclick="getlabel(this)"></label><br/>
+                </div>
+                <button href="#" class="card-link" onclick = "nextQuestion()" >Next</button>
+
+            </div>
+        </div>
+    </fieldset>
+      <script src="app.js" ></script>
+</body>
+
+
+
+<!-- <body onload = "showQuestion(1)">
+    <fieldset >
+        <div class="card text-center main" >
+            <div class="card-body inside">
+                <h5 class="card-title">Question No</h5>
+                <h6 class="card-subtitle mb-2 text-muted" id = "quest">abc</h6>
+                <input class="card-text options" type="radio" name="question" onclick="getlabel(this)" >a</input><br/>
+                <input class="card-text options" type="radio" name = "question" onclick="getlabel(this)">b</input><br/>
+                <input class="card-text options" type="radio" name = "question"onclick="getlabel(this)">c</input><br>
+                <input class="card-text options" type="radio" name = "question" onclick="getlabel(this)" >d</input><br/>
+                <button href="#" class="card-link" onclick = "nextQuestion()" >Next</button>
+                
+
+            </div>
+        </div>
+    </fieldset>
+      <script src="app.js" ></script>
+</body> -->
+
+
+
+
+
+</html>
